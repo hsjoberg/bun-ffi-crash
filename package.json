@@ -1,0 +1,13 @@
+{
+  "name": "bun-ffi-crash",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:native": "cargo build --release --manifest-path native/Cargo.toml",
+    "repro": "cargo build --release --manifest-path native/Cargo.toml && bun index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.10",
+    "typescript": "^5.9.3"
+  }
+}
